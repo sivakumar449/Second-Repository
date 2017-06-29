@@ -26,9 +26,10 @@ import pages.LoginPage;
 public class GenericWrappers implements Wrappers{
 	public RemoteWebDriver driver;
 	static int i=1;
+	
 	@Override
 	public void enterByName(String name, String text) throws IOException {
-		// TODO Auto-generated method stub
+		// This methods is for entering user name
 		try
 		{
 			driver.findElementByName(name).sendKeys(text);
@@ -42,7 +43,7 @@ public class GenericWrappers implements Wrappers{
 
 	@Override
 	public void clickByName(String name) {
-		// TODO Auto-generated method stub
+		//Click a button using name attribute
 		driver.findElementByName(name).click();
 		try {
 			takeSnap();
@@ -55,7 +56,7 @@ public class GenericWrappers implements Wrappers{
 	@Override
 	//@BeforeTest
 	public void invokeApp(String browser,String url) throws IOException {
-
+		//Opening the browser and passing the url
 		//String browser ="chrome";
 		//String url="http://newtours.demoaut.com/";
 		if(browser.equalsIgnoreCase("chrome"))
@@ -71,7 +72,7 @@ public class GenericWrappers implements Wrappers{
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		takeSnap();
-		}
+	}
 	public void takeSnap() throws IOException
 	{
 		File src= driver.getScreenshotAs(OutputType.FILE);
@@ -87,7 +88,7 @@ public class GenericWrappers implements Wrappers{
 
 	@Override
 	public void clickByXpath(String xpathvalue) {
-		// TODO Auto-generated method stub
+		// Clicking on the button/link using xpath
 
 		try {
 			driver.findElementByXPath(xpathvalue).click();
@@ -115,7 +116,7 @@ public class GenericWrappers implements Wrappers{
 
 	}
 
-//	@SuppressWarnings("deprecation")
+	//	@SuppressWarnings("deprecation")
 	@DataProvider(name="getSheet")
 	public static String[][] getData() throws IOException {
 

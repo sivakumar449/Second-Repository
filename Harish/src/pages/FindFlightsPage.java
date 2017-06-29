@@ -5,7 +5,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import wrappers.GenericWrappers;
 
 public class FindFlightsPage extends GenericWrappers{
-	
+	/*clicking on find flights button
+	 * */
 	public FindFlightsPage(RemoteWebDriver driver)
 	{
 		this.driver=driver;
