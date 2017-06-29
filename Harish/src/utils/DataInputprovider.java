@@ -15,7 +15,6 @@ public class DataInputprovider {
 	public static String[][] getSheet() throws IOException {
 		
 		String[][] a = null;
-		
 		FileInputStream fis=new FileInputStream(new File("C:\\Users\\Sivakumar\\workspace\\Starting\\Harish\\test Data\\Data.xlsx"));
 		XSSFWorkbook workbook=new XSSFWorkbook(fis);
 		XSSFSheet sheet=workbook.getSheetAt(0);
@@ -30,9 +29,6 @@ public class DataInputprovider {
 				//System.out.println(a[i-1][j]);
 			}
 		}
-		
-		
-		
 		return a;
 
 	}
