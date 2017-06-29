@@ -33,7 +33,6 @@ public class GenericWrappers implements Wrappers{
 		{
 			driver.findElementByName(name).sendKeys(text);
 			takeSnap();
-			
 		}
 		catch(NoSuchElementException e)
 		{
@@ -97,7 +96,6 @@ public class GenericWrappers implements Wrappers{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 	}
 
 	@Override
