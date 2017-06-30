@@ -24,6 +24,7 @@ public class LoginPage extends GenericWrappers {
 		enterByName("password", password);
 		return this;
 	}
+	//this method is used for clicking on login button
 	public FindFlightsPage clickSignin()
 	{
 		clickByName("login");
