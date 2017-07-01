@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import pages.LoginPage;
 import wrappers.GenericWrappers;
-
+//this test case is for login functionality test
 public class TestCases extends GenericWrappers {
 	
  @Test(dataProvider="getSheet")	
