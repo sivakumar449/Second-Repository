@@ -13,6 +13,7 @@ public class LoginPage extends GenericWrappers {
 	public LoginPage(RemoteWebDriver driver)
 	{
 		this.driver=driver;
+		
 	}
 	public LoginPage enterUsername(String username) throws IOException
 	{
